@@ -1,0 +1,8 @@
+<view class="f-a f-w">
+	<view wx:for="{{list}}" wx:key="index" data-item="{{item}}" class="item">
+		<view class="f-c-a p-tb-1 border" bindtap="goto"  data-item="{{item}}">
+			<view class="f14 f-w-6 title_color">{{item.name}}</view>
+			<view class="f12 bookCount_color m-t-05">{{item.bookCount}}本</view>
+		</view>
+	</view>
+</view>

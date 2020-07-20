@@ -1,0 +1,32 @@
+<view class="p-f nav">
+	<view class="f-aj-around p-tb-1 f16 p-r">
+		<view wx:for="{{arr}}" wx:key="index" class="f-j">
+			<view bindtap="clickItem" data-item="{{item}}" data-index="{{index}}" class="{{num===index?'red':''}}">{{item}}</view>
+			<view class="line p-a-b" wx:if="{{num===index}}"></view>
+		</view>
+	</view>
+</view>
+<view class="bottom">
+	<view wx:if="{{num===0}}">
+		<view class="p-1 f16 title_color">男生</view>
+		<bookmall_item list="{{male}}"></bookmall_item>
+	</view>
+	<view wx:if="{{num===0}}">
+		<view class="p-1 f16 title_color">女生</view>
+		<bookmall_item list="{{female}}"></bookmall_item>
+	</view>
+	<view wx:if="{{num===0}}">
+		<view class="p-1 f16 title_color">出版</view>
+		<bookmall_item list="{{press}}"></bookmall_item>
+	</view>
+	<view wx:if="{{num===1}}">
+		<view>
+			<view class="p-1 f16 title_color">男生</view>
+			<bookmall_ranking list="{{male_item}}"></bookmall_ranking>
+		</view>
+		<view>
+			<view class="p-1 f16 title_color">女生</view>
+			<bookmall_ranking list="{{female_item}}"></bookmall_ranking>
+		</view>
+	</view>
+</view>

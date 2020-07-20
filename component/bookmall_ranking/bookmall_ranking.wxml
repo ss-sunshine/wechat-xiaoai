@@ -1,0 +1,6 @@
+<view wx:for="{{list}}" wx:key="index" data-item="{{item}}">
+	<view class="p-1-2 f-a b-bottom" bindtap="clickItem" data-item="{{item}}">
+		<image src="{{item.cover}}" class="img m-r-1"></image>
+		<view class="f16 f-color-3">{{item.title}}</view>
+	</view>
+</view>

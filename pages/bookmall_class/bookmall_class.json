@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bookmall_classItem":"../../component/bookmall_class/bookmall_classItem"
+  },
+  "enablePullDownRefresh": true
+}

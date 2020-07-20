@@ -1,0 +1,7 @@
+<view class="f-aj-around p-tb-1 f16 p-r nav" wx:if="{{flag===true}}">
+	<view wx:for="{{arr}}" wx:key="index" class="f-j">
+		<view bindtap="clickItem" data-item="{{item}}" data-index="{{index}}" class="{{num===index?'red':''}}">{{item}}</view>
+		<view class="line p-a-b" wx:if="{{num===index}}"></view>
+	</view>
+</view>
+<ranking_Item books="{{books}}"></ranking_Item>

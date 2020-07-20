@@ -1,0 +1,74 @@
+<view>
+	<view class="top_red"></view>
+	<view class="top_white p-r f-j">
+		<view class="title p-a-t f-c-a">
+			<image src="{{detail.cover}}" class="img" bindtap="clickImg1"></image>
+			<view class="look_img f-a-j" wx:if="{{flag===true}}" bindtap="clickImg2">
+				<image src="{{detail.cover}}" class="img1" data-detail="{{detail}}"
+				catchlongtap="clickSave"></image>
+			</view>
+			<view class="f18 f-w-6 m-tb-1">{{detail.title}}</view>
+			<view class="f14 color">{{detail.author}}</view>
+			<view class="d-f m-t-1">
+				<view wx:for="{{arr}}" wx:key="index" class="m-lr-15">
+					<view data-index="{{index}}" class="{{index===0?'btn':''}},{{index===1?'btn1':''}}" bindtap="clickItem">
+						<view class="f14">{{item}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="background">
+		<view class="f-j p-t-3">
+			<view wx:for="{{[1,2,3,4,5]}}" wx:key="index" class="{{detail.rating.score/2 >= item ? 'rate_active' : 'rate'}}">★</view>
+		</view>
+		<view class="f14 f-j">
+			<text class="m-r-1 w-space">更新至</text>
+			<text class="lastChapter w-space ov-h t-over">{{detail.lastChapter}}</text>
+		</view>
+		<view class="content">
+			<view class="p-tb-1 f-aj-around p-r c_title">
+				<view wx:for="{{list}}" wx:key="index" class="f-j">
+					<view data-index="{{index}}" class="{{sum===index?'red':''}}" bindtap="clickItem1">
+						<view class="f14" wx:if="{{index===0}}">{{item}}</view>
+						<view class="f14" wx:if="{{index===1}}">{{item}}({{docs.length}})</view>
+						<view class="line p-a-b" wx:if="{{sum===index}}"></view>
+					</view>
+				</view>
+			</view>
+			<scroll-view scroll-y="true" class="c_content" wx:if="{{sum===0}}">
+				<view class="c_content1">
+					<view class="f14 f-color-h t-align-lr lh-15">{{detail.longIntro}}</view>
+					<view class="total f14 f-a-j m-t-1" bindtap="clickContent">
+						<image src="../../images/tabbar/more.png" class="more"></image>
+						总目录({{detail.chaptersCount}}章)
+					</view>
+					<view class="f14 f-j-bw">
+						<view>看过这本书的人还在看</view>
+						<view class="red f-a" bindtap="clickNew">
+							<image src="../../images/tabbar/copy.png" class="new"></image>
+							换一换
+						</view>
+					</view>
+					<view class="f-j-bw m-t-1">
+						<view wx:for="{{bookList}}" wx:key="index" class="f0">
+							<image src="{{item.cover}}" data-item="{{item}}" class="new_img" bindtap="detail"></image>
+							<view class="f14 f-j t-center" data-item="{{item}}" bindtap="detail">{{item.title}}</view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+			<scroll-view scroll-y="true" class="c_content" wx:if="{{sum===1}}">
+				<view wx:for="{{docs}}" wx:key="index" class="c_content1">
+					<view class="d-f">
+						<image src="{{item.author.avatar}}" class="avatar m-r-15"></image>
+						<view>
+							<view class="f14 red">{{item.author.nickname}}</view>
+							<view class="f12 f-color-h lh-15 m-t-05 avatar_content">{{item.content}}</view>
+						</view>
+					</view>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,7 @@
+/* pages/bookmall_class/bookmall_class.wxss */
+.border{
+  border-bottom: 2rpx solid rgb(240, 240, 240);
+}
+.red{
+  color: red;
+}

@@ -1,0 +1,18 @@
+<view class="f-a f14 border">
+	<view wx:for="{{typeList}}" wx:key="index">
+		<view bindtap="clickItem_one" data-item="{{item}}" data-index="{{index}}" class="{{num===index?'red':''}}">
+			<view class="m-1">{{item.name}}</view>
+		</view>
+	</view>
+</view>
+<!-- 横向滚动（弹性盒子失效）-->
+<!-- 外层样式  white-space: nowrap -->
+<!-- 内层样式  display:inline-block -->
+<scroll-view class="f14 border w-space" scroll-x>
+	<view wx:for="{{list}}" wx:key="index" class="d-block">
+		<view bindtap="clickItem_two" data-item="{{item}}" data-index="{{index}}" class="{{sum===index?'red':''}}">
+			<view class="m-1">{{item}}</view>
+		</view>
+	</view>
+</scroll-view>
+<bookmall_classItem books="{{books}}"></bookmall_classItem>

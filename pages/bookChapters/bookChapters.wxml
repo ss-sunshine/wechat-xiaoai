@@ -1,0 +1,30 @@
+<view bindtap="click" class="box" style="background:{{rgb}}">
+	<view class="p-1">
+		<view class="f20 f-w-6 p-b-1 b-bottom">{{title}}</view>
+		<!-- <view class="f16 lh-4">{{body}}</view> -->
+		<rich-text nodes="{{body}}" class=" f-color-h lh-25 t-ju t-indent" style="font-size:{{fontSize}}rpx"></rich-text>
+		<view class="f16 f-a-j m-t-2">
+			<view class="btn1 f-a-j f-color-w">上一章</view>
+			<view class="btn2 f-a-j f-color-w">下一章</view>
+		</view>
+	</view>
+</view>
+<view class="{{flag===true?'d-block':'d-none'}}">
+	<view class="bottom_box">
+		<view class="{{color===true?'d-block':'d-none'}}">
+			<view class="bottom_top f-a-j">
+				<text class="f14 m-lr-15">换肤</text>
+				<view class="f-a">
+					<view wx:for="{{[1,2,3,4,5]}}" wx:key="index" data-index="{{index}}" class="{{index===0?'one':''}},{{index===1?'two':''}},{{index===2?'three':''}},{{index===3?'frou':''}},{{index===4?'five':''}},{{num===index?'max':'min'}}" bindtap="clickColor_item">
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="bottom f-aj-around f16">
+			<text bindtap="clickContent">目录</text>
+			<text bindtap="clickLess">Aa-</text>
+			<text bindtap="clickAdd">Aa+</text>
+			<text bindtap="clickColor">背景</text>
+		</view>
+	</view>
+</view>

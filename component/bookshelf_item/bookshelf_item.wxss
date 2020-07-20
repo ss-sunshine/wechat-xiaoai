@@ -1,0 +1,287 @@
+/* component/bookshelf_item/bookshelf_item.wxss */
+/* 定位 */
+.p-r {
+  position: relative;
+}
+
+.p-a-r {
+  position: absolute;
+  right: 0;
+}
+
+.p-a-l {
+  position: absolute;
+  left: 0;
+}
+
+.p-a-t {
+  position: absolute;
+  top: 0;
+}
+
+.p-a-b {
+  position: absolute;
+  bottom: 0;
+}
+
+/* 文字 */
+.f12 {
+  font-size: 24rpx;
+}
+
+.f14 {
+  font-size: 28rpx;
+}
+
+.f16 {
+  font-size: 32rpx;
+}
+
+.f18 {
+  font-size: 36rpx;
+}
+
+.f20 {
+  font-size: 40rpx;
+}
+
+.f24 {
+  font-size: 48rpx;
+}
+
+.f-color-w {
+  color: white;
+}
+
+.f-color-b {
+  color: black;
+}
+
+.f-w-6 {
+  font-weight: 600;
+}
+
+.f-w-7 {
+  font-weight: 700;
+}
+
+.f-w-9 {
+  font-weight: 900;
+}
+
+/* 弹性盒子 */
+.d-f {
+  display: flex;
+}
+
+.f-a {
+  display: flex;
+  align-items: center;
+}
+
+.f-j {
+  display: flex;
+  justify-content: center;
+}
+
+.f-a-j {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-j-bw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-aj-bw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-j-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-aj-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-c-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-c-j {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.f-c-a-j {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-c-aj-bw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-c-aj-around {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 占比 */
+.f-1 {
+  flex: 1;
+}
+
+/* 换行 */
+.f-w {
+  flex-wrap: wrap;
+}
+
+.ok {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.refresh {
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 40rpx;
+}
+
+.border_btn {
+  border: 2rpx solid #999;
+  padding: 8rpx 20rpx;
+  border-radius: 16rpx;
+  color: #666;
+}
+
+.m-t-5 {
+  margin-top: 100rpx;
+}
+
+.turn {
+  width: 36rpx;
+  height: 36rpx;
+  margin-left: 40rpx;
+  animation: turn 1s linear infinite;
+}
+
+/* 
+  turn : 定义的动画名称
+  1s : 动画时间
+  linear : 动画以何种运行轨迹完成一个周期
+  infinite :规定动画应该无限次播放
+ */
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.img {
+  width: 220rpx;
+  height: 310rpx;
+}
+
+.w_font {
+  width: 220rpx;
+}
+
+.t-a-c {
+  text-align: center;
+}
+
+.m-tb-1 {
+  margin: 20rpx 0;
+}
+
+.m-b-1 {
+  margin-bottom: 20rpx;
+}
+
+.one {
+  width: calc(100%/3);
+}
+
+.two {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 停止动画 */
+.stop {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  /* Safari 和 Chrome */
+}
+.del{
+  width: 50rpx;
+  height: 50rpx;
+  top: -20rpx;
+  right: -10rpx;
+  z-index: 99;
+}
+/* 开始动画 */
+.deletAnimation {
+  animation:  delete 1s linear infinite;
+}
+@keyframes delete {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

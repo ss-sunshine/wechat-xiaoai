@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "bookshelf_item":"../../component/bookshelf_item/bookshelf_item"
+  },
+  "navigationBarTitleText":"小爱小说"
+}

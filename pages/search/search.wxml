@@ -1,0 +1,38 @@
+<view class="p-15">
+	<view class="search f-a-j p-r">
+		<image src="../../images/tabbar/search1.png" class="search_icon" wx:if="{{value===''}}"></image>
+		<input class="search_input f16 t-align-c"  bindinput="bindInput" bindconfirm="bindConfirm" bindblur="bindBlur" placeholder="{{placeholder}}" placeholder-style="color:#999" value="{{value}}" />
+		<image src="../../images/tabbar/del1.png" class="del_icon1 p-a-r" wx:if="{{value!==''}}" bindtap="del"></image>
+	</view>
+	<view wx:if="{{value===''}}">
+		<view class="m-tb-15">
+			<view class="f-j-bw">
+				<view class="f16">大家都在搜</view>
+				<view class="red f-a f14" bindtap="clickNew">
+					<image src="../../images/tabbar/copy.png" class="new"></image>
+					换一换
+				</view>
+			</view>
+			<view class="f-a f-w">
+				<view wx:for="{{newHotWords}}" wx:key="index">
+					<view class="f14 hot f-color-w" style="background:{{item.color}}"  data-item="{{item}}" bindtap="clickItem">{{item.word}}</view>
+				</view>
+			</view>
+		</view>
+		<view class="p-t-1">
+			<view class="f-j-bw">
+				<view class="f16">搜索历史</view>
+				<view class="red f-a f14" bindtap="clickDel" wx:if="{{history.length!==0}}">
+					<image src="../../images/tabbar/del2.png" class="del"></image>
+					清空
+				</view>
+			</view>
+			<view class="f-a f-w">
+				<view wx:for="{{history}}" wx:key="index">
+					<view class="f14 history" data-item="{{item}}" bindtap="clickItem1">{{item}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<search_item wx:if="{{value!==''}}" bookSearch="{{bookSearch}}"></search_item>
+</view>

@@ -1,0 +1,12 @@
+/* pages/ranking/ranking.wxss */
+.nav{
+  background: rgb(247,247,247);
+}
+.line{
+  width: 50rpx;
+  height: 4rpx;
+  background: red;
+}
+.red{
+  color: red;
+}

@@ -1,0 +1,6 @@
+<view class="f18 f-w-7 p-1 b_bottom">目录</view>
+<view>
+	<view wx:for="{{chapters}}" wx:key="index">
+		<view class="p-1 f14 f-color-3">{{item.title}}</view>
+	</view>
+</view>

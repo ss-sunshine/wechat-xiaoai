@@ -1,0 +1,251 @@
+/* pages/search/search.wxss */
+.p-15{
+  padding: 30rpx;
+}
+/* component/search_item/search_item.wxss */
+/* 定位 */
+.p-r{
+  position: relative;
+}
+.p-a-r{
+  position: absolute;
+  right: 0;
+}
+.p-a-l{
+  position: absolute;
+  left: 0;
+}
+.p-a-t{
+  position: absolute;
+  top: 0;
+}
+.p-a-b{
+  position: absolute;
+  bottom: 0;
+}
+.p-f{
+  position: fixed;
+}
+
+/* 文字 */
+.f12{
+  font-size: 24rpx;
+}
+.f14{
+  font-size: 28rpx;
+}
+.f16{
+  font-size: 32rpx;
+}
+.f18{
+  font-size: 36rpx;
+}
+.f20{
+  font-size: 40rpx;
+}
+.f22{
+  font-size: 44rpx;
+}
+.f24{
+  font-size: 48rpx;
+}
+.f-color-w{
+  color: white;
+}
+.f-color-b{
+  color: black;
+}
+.f-color-h{
+  color: #666;
+}
+.f-color-3{
+  color: #333;
+}
+.f-color-9{
+  color: #999;
+}
+.f-w-6{
+  font-weight: 600;
+}
+.f-w-7{
+  font-weight: 700;
+}
+.f-w-9{
+  font-weight: 900;
+}
+.lh-2{
+  line-height: 2;
+}
+.t-indent{
+  text-indent: 56rpx;
+}
+.t-align-lr{
+  text-align: justify;
+}
+.t-align-c{
+  text-align: center;
+}
+/* 字间距 */
+.l-spac{
+  letter-spacing: 4rpx;
+}
+
+/* 弹性盒子 */
+.d-f{
+  display: flex;
+}
+.f-a{
+  display: flex;
+  align-items: center;
+}
+.f-j{
+  display: flex;
+  justify-content: center;
+}
+.f-a-j{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-j-bw{
+  display: flex;
+  justify-content: space-between;
+}
+.f-aj-bw{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f-j-around{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.f-aj-around{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.f-c{
+  display: flex;
+  flex-direction: column;
+}
+.f-c-a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.f-c-j{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.f-c-a-j{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.f-c-aj-bw{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.f-c-aj-around{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 占比 */
+.f-1{
+  flex: 1;
+}
+.f-2{
+  flex: 2;
+}
+.f-3{
+  flex: 3;
+}
+/* 换行 */
+.f-w{
+  flex-wrap: wrap;
+}
+.f-w-n{
+  flex-wrap: nowrap;
+}
+.ov-h{
+  overflow: hidden;
+}
+.w-space{
+  white-space: nowrap;
+}
+.d-block{
+  display:inline-block
+}
+.m-1{
+  margin: 20rpx;
+}
+.m-r-1{
+  margin-right: 20rpx;
+}
+.p-t-1{
+  padding-top: 20rpx;
+}
+.m-tb-1{
+  margin: 20rpx 0;
+}
+.m-t-1{
+  margin-top: 20rpx;
+}
+.m-tb-15{
+  margin: 30rpx 0;
+}
+.p-tb-1{
+  padding: 20rpx 0;
+}
+.p-b-1{
+  padding-bottom: 20rpx;
+}
+.p-1{
+  padding: 20rpx;
+}
+.search{
+  width: 100%;
+  height: 70rpx;
+  background: rgb(239,239,239);
+  border-radius: 100rpx;
+}
+.search_icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.del_icon1{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.red{
+  color: rgb(236,48,76);
+}
+.new{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 6rpx;
+}
+.color{
+  background: red;
+}
+.hot{
+  padding: 10rpx 20rpx;
+  margin: 20rpx 20rpx 0 0;
+}
+.del{
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 6rpx;
+}
+.history{
+  margin: 20rpx 40rpx 0 0;
+}

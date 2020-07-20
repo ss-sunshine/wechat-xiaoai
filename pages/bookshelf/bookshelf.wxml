@@ -1,0 +1,3 @@
+<view class="p-1">
+	<bookshelf_item bookshelf="{{bookshelf}}"></bookshelf_item>
+</view>

@@ -1,0 +1,13 @@
+<view class="p-lr-1 f0" wx:if="{{books.length>0}}">
+	<view wx:for="{{books}}" wx:key="index">
+		<view class="p-tb-15 border d-f" data-item="{{item}}" bindtap="detail">
+			<image src="{{item.cover}}" class="img m-r-1"></image>
+			<view>
+				<view class="f16 f-w-6 w-space t-over title ov-h">{{item.title}}</view>
+				<view class="f12 color m-tb-06">{{item.author}}</view>
+				<view class="f12 color text t-align-lr">{{item.shortIntro}}</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="f14 color f-j m-tb-1" wx:if="{{books.length===0}}">暂无数据</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ranking_Item": "../../component/ranking_Item/ranking_Item"
+  },
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
+}

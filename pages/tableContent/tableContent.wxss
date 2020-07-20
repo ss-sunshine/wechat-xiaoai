@@ -1,0 +1,4 @@
+/* pages/tableContent/tableContent.wxss */
+.b_bottom{
+  border-bottom: 2rpx solid rgb(245,245,245);
+}

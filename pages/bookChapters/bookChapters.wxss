@@ -1,0 +1,90 @@
+/* pages/bookChapters/bookChapters.wxss */
+.lh-25{
+  line-height: 2.5;
+}
+.t-indent{
+  text-indent: 2em;
+}
+.t-ju{
+  text-align: justify;
+}
+.f-color-h{
+  color: #333;
+}
+.btn1{
+  width: 160rpx;
+  height: 60rpx;
+  background: rgb(236,48,76);
+  border-radius: 100rpx 0 0 100rpx;
+  margin: 2rpx;
+}
+.btn2{
+  width: 160rpx;
+  height: 60rpx;
+  background: rgb(236,48,76);
+  border-radius: 0 100rpx 100rpx 0;
+  margin: 2rpx;
+}
+.m-t-2{
+  margin-top: 40rpx;
+}
+.box{
+  height: 100vh;
+}
+.bottom_box{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.b-bottom{
+  border-bottom: 2rpx solid rgb(230,230,230);
+}
+.bottom{
+  height: 80rpx;
+  color: white;
+  background: #222;
+}
+.bottom_top{
+  color: white;
+  background: #111;
+  height: 100rpx;
+}
+.d-block{
+  display: block;
+  transform: translate(0 800rpx);
+  transition: 0.5s;
+  /* -webkit-transition: 0.5s; */
+}
+.d-none{
+  display: none;
+}
+.m-lr-15{
+  margin: 0 30rpx;
+}
+.max{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 0 10rpx;
+}
+.min{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin: 0 10rpx;
+}
+.one{
+  background: #fff
+}
+.two{
+  background: #E3E1C4;
+}
+.three{
+  background: #E6EAE2;
+}
+.frou{
+  background: #A0A39F;
+}
+.five{
+  background: #CAECD1;
+}

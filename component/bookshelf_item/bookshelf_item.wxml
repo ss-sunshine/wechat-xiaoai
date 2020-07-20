@@ -1,0 +1,20 @@
+<view class="f-aj-bw m-b-1">
+	<view>
+		<image src="../../images/tabbar/eid.png" class="ok" bindtap="edit" wx:if="{{num===0&&bookshelf.length!==0}}"></image>
+		<image src="../../images/tabbar/ok.png" class="ok" bindtap="edit" wx:if="{{num===1||bookshelf.length===0}}"></image>
+	</view>
+	<view class="f-a">
+		<text class="f16 border_btn" bindtap="clickHelp">帮助</text>
+		<image src="../../images/tabbar/refresh.png" bindtap="refresh" class="{{flag===false ?'refresh':'turn'}}"></image>
+	</view>
+</view>
+<view class="two">
+	<view wx:for="{{bookshelf}}" wx:key="index" class="one f-j">
+		<view class="m-tb-1 w_font p-r" data-item="{{item}}" bindtap="detail">
+			<image data-item="{{item}}" src="../../images/tabbar/del1.png" class="del p-a-r" wx:if="{{num===1}}" catchtap="del"></image>
+			<image src="{{item.cover}}" class="img {{num===0?'stop':'deletAnimation'}}"></image>
+			<view class="f14 t-a-c">{{item.title}}</view>
+		</view>
+	</view>
+</view>
+<view class="f16 f-j m-t-5" wx:if="{{bookshelf.length===0}}">主人还没收藏书籍哦，请去书城收藏吧 ！</view>

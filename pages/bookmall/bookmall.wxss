@@ -1,0 +1,20 @@
+/* pages/bookmall/bookmall.wxss */
+.nav{
+  width: 100%;
+  top: 0;
+  background: rgb(247,247,247);
+}
+.red{
+  color: red;
+}
+.line{
+  width: 50rpx;
+  height: 4rpx;
+  background: red;
+}
+.bottom{
+  margin-top: 80rpx;
+}
+.title_color{
+  color: #999;
+}

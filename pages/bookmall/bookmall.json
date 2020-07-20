@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bookmall_item":"../../component/bookmall_item/bookmall_item",
+    "bookmall_ranking":"../../component/bookmall_ranking/bookmall_ranking"
+  },
+  "navigationBarTitleText":"书城"
+}

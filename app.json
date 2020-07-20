@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/bookshelf/bookshelf",
+    "pages/bookmall/bookmall",
+    "pages/search/search",
+    "pages/help/help",
+    "pages/bookmall_class/bookmall_class",
+    "pages/detail/detail",
+    "pages/bookChapters/bookChapters",
+    "pages/ranking/ranking",
+    "pages/tableContent/tableContent"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#CB1C36",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#CB1C36",
+    "list": [{
+        "text": "书架",
+        "pagePath": "pages/bookshelf/bookshelf",
+        "iconPath": "images/tabbar/bookshelf.png",
+        "selectedIconPath": "images/tabbar/bookshelf_active.png"
+      },
+      {
+        "text": "书城",
+        "pagePath": "pages/bookmall/bookmall",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_active.png"
+      },
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "images/tabbar/search.png",
+        "selectedIconPath": "images/tabbar/search_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
